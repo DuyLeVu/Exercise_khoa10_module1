@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Thuc hanh 04</title>
+</head>
+<body>
+<script>
+    let sout;
+    let i=1
+    sout = "<table style='border: 1px solid black; width: 350px; cellpadding: 3px; cellspacing: 0; border-collapse: collapse; table-layout: fixed'>";
+    while (i <= 10) {
+        sout = sout + "<tr style='border: 1px solid black'>";
+        let j = 1;
+        while (j <=10 ){
+            sout = sout + "<td style='border: 1px solid black'>" + i * j + "</td>";
+            j++;
+        }
+        sout = sout + "</tr>";
+        i++
+    }
+    sout = sout + "</table>";
+    document.write(sout);
+</script>
+
+</body>
+</html>
